@@ -1,11 +1,20 @@
 import {promises as fs} from 'fs';
 
 
+
 // writeJson('MG');
 
 export async function writeJson(nome){
     try{
-        await fs.writeFile(nome + ".json", "blablabla")
+
+
+        const arrayCarros = ["Gol", "Palio", "Uno"];
+        const obj = {
+            carros : arrayCarros
+        };
+
+      
+        await fs.writeFile(JSON.stringify(nome)+ ".json", JSON.stringify(obj));;
 
 
     }catch(err){
@@ -13,5 +22,3 @@ export async function writeJson(nome){
     }
 }
 
-
-module.exports = {writeJson};
