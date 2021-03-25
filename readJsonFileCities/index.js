@@ -9,18 +9,21 @@ writeReadJson();
 async function writeReadJson(){
     try{
         const readEstadosFile = JSON.parse( await fs.readFile("estados.json"));
-        const nomeEstado = readEstadosFile.map(estado=>{ return{ sigla: estado.Sigla }});
+        const nomeEstado = readEstadosFile.map(estado=>{ 
+            return{ sigla: estado.Sigla }
+        });
 
-        // console.log(nomeEstado);
+        
+
+
+        // console.log(Object.values(nomeEstado));
 
         for(let estado in nomeEstado){
             writeJson(nomeEstado[estado]);
             // console.log(nomeEstado[estado]);
         }
 
-        // nomeEstado.forEach( (nomeEstado)=>{
-        //     writeJson(nomeEstado)
-        // });
+   
 
         
     }catch(err){
@@ -28,4 +31,3 @@ async function writeReadJson(){
     }
 }
 
-     

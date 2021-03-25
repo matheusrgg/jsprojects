@@ -8,14 +8,20 @@ export async function writeJson(nome){
     try{
 
 
-        const arrayCarros = ["Gol", "Palio", "Uno"];
-        const obj = {
-            carros : arrayCarros
-        };
+       
 
-      
-        await fs.writeFile(JSON.stringify(nome)+ ".json", JSON.stringify(obj));;
+ 
 
+        await fs.writeFile(GetPropertyValue(nome, "sigla") + ".json")
+       
+
+        function GetPropertyValue(obj1, dataToRetrieve) {
+            return dataToRetrieve
+              .split('.') // split string based on `.`
+              .reduce(function(accumulator, current) {
+                return accumulator && accumulator[current]; // get inner property if `accumulator` is defined else get `accumulator` and return
+              }, obj1) // set initial value as object
+        }
 
     }catch(err){
         console.log(err);
