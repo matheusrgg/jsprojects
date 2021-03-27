@@ -16,7 +16,7 @@ async function writeReadJson(){
         
 
 
-        // console.log(Object.values(nomeEstado));
+        
 
         for(let estado in nomeEstado){
             writeJson(nomeEstado[estado]);
@@ -24,7 +24,7 @@ async function writeReadJson(){
         }
 
    
-
+        
         
     }catch(err){
         console.log(err);
