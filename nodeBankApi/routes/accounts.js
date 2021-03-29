@@ -33,7 +33,7 @@ router.get("/", async (req, res)=>{
     } catch(err){
         res.status(400).send({error: err.message });
     }
-})
+});
 
 
 router.get("/:id", async (req, res)=>{
@@ -43,6 +43,20 @@ router.get("/:id", async (req, res)=>{
             account=> account.id === parseInt(req.params.id)) 
         res.send(account)
 
+    } catch(err){
+        res.status(400).send({error: err.message });
+    }
+});
+
+
+router.delete("/:id", async (req, res)=>{
+    try{
+        const data = JSON.parse(await readFile(global.fileName));
+        data.accounts = data.accounts.filter(
+            account=> account.id !== parseInt(req.params.id));
+            await writeFile(global.fileName, JSON.stringify(data, null, 2));
+            res.end(); 
+        
     } catch(err){
         res.status(400).send({error: err.message });
     }
