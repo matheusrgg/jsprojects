@@ -1,0 +1,83 @@
+{
+  "nextId": 16,
+  "lancamentos": [
+    {
+      "id": 1,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 2,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 3,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 4,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 5,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 6,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 7,
+      "valor": -200,
+      "categoria": "Supermercado",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 8,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 9,
+      "valor": -200,
+      "categoria": "Supermercado",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 10,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 13,
+      "valor": -200,
+      "categoria": "Supermercado",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 14,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "31/03/2021"
+    },
+    {
+      "id": 15,
+      "valor": 1200,
+      "categoria": "Salário",
+      "data": "11/04/2021"
+    }
+  ]
+}
