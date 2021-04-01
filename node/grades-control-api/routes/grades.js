@@ -3,7 +3,7 @@ import { promises as fs, write } from "fs";
 const { readFile, writeFile } = fs;
 const router = express.Router();
 
-
+import {totalGrade} from "../controller/totalGrade.js"
 
 router.post("/", async (req, res)=>{
     try{
@@ -13,7 +13,6 @@ router.post("/", async (req, res)=>{
         grade = {id: data.nextId++,...grade };
         data.grades.push(grade);
     
-
         await writeFile(global.fileName, JSON.stringify(data));
 
         res.send(grade);
@@ -36,18 +35,12 @@ router.get("/", async (req, res)=>{
 
 
 
-router.get("/totalGrade", async (req, res)=>{
- 
-    async function totalGrade(){
-        const readStudentSubject = JSON.parse( await fs.readFile(global.fileName));
-        const studentSubject = readStudentSubject.map( grades =>{
-            return{
-                student: grades.student,
-                subject:grades.subject
-            }
-        })
-    }
-    totalGrade();
+router.get("/totalGrade", (req, res)=>{
+    try {
+        res.send("teste");
+      } catch (err) {
+        res.status(400).send(err.message);
+      }
 });
 
 
