@@ -4,8 +4,6 @@ import { writeJson } from './testCreate.js'
 
 writeReadJson();
 
-
-
 async function writeReadJson(){
     try{
         const readEstadosFile = JSON.parse( await fs.readFile("estados.json"));
@@ -13,21 +11,12 @@ async function writeReadJson(){
             return{ sigla: estado.Sigla }
         });
 
-        
-
-
-        
-
         for(let estado in nomeEstado){
             writeJson(nomeEstado[estado]);
             // console.log(nomeEstado[estado]);
         }
-
-   
-        
-        
+      
     }catch(err){
         console.log(err);
     }
 }
-
