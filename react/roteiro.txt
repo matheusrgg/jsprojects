@@ -46,6 +46,7 @@ React com Class Components
 (✔) Transformar App.js em Class Component
 (✔) Definir this.state 
 (✔) Reaproveitar função para transformação de data/hora no formato import/export
+-- 10:00m
 (✔) Implementar render()
 (✔) Implementar clique no botão com método handleClick
 (✔) Implementar componentDidUpdate para atualizar document.title com a
