@@ -17,9 +17,10 @@ function handleButtonClick() {
 
 function render() {
   const ul = document.querySelector('#data');
-  ul.innerHTML = '';
 
+  ul.innerHTML = '';
   let lis = '';
+
   //item vetor com data e hora
   clickArray.map((item) => {
     lis += `<li>${item}</li>`;
