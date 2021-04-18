@@ -2,23 +2,24 @@
 
 function likes(names) {
   // TODO
+  if (names.length === 0) 
 
-  `${nome}` + " " + "likes this"
+    return("no one likes this");
+   else if (names.length === 1)
 
-  if (names.length === 0) {
-    console.log("no one likes this");
-  } else {
-    for (var name in names) {
-      if (name.length === 0) {
-        console.log("não tem nada");
-      } else {
-        console.log(names[name] + " " + "likes this")
-      }
-    }
-  }
+     return( `${names[0]}` + ' ' + 'likes this')
+  else if (names.length === 2)
+
+     return( `${names[0]}` +  ' ' + 'and' + ' ' + `${names[1]}` + ' ' + 'like this')
+
+  else if (names.length === 3)
+    return( `${names[0]}` + ',' + ' ' + `${names[1]}` + ' ' + 'and' + ' ' + `${names[2]}` + ' ' + 'like this')
+
+  else if(names.length === 4)
+    var teste = names.length - 2
+
+  return( `${names[0]}` + ',' + ' ' + `${names[1]}` + ' ' + 'and' + ' ' + teste + ' ' + 'others like this')
 }
 
 
-likes(['Max', 'John', 'Mark'])
-
-// likes([])
+likes(['Max', 'John', 'John', 'John', 'John' , 'John'])
