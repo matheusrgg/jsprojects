@@ -1,13 +1,13 @@
 import { getCustomRepository, Repository } from "typeorm";
 import { Setting } from "../entities/Setting";
-import { SettingsRepository } from "../repositories/SettingsRepository"
+import { SettingsRepository } from "../repositories/SettingsRepository";
 
 interface ISettingsCreate {
   chat: boolean;
   username: string;
 }
 
-class SettingService {
+class SettingsService {
   private settingsRepository: Repository<Setting>
 
   constructor() {
@@ -35,4 +35,4 @@ class SettingService {
   }
 }
 
-export { SettingService }
+export { SettingsService }

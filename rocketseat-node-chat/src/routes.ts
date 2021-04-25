@@ -1,8 +1,7 @@
-import { Router } from "express"
+import express, { Router } from "express";
 import { MessagesController } from "./controllers/MessagesController";
 import { SettingsController } from "./controllers/SettingsController";
 import { UsersController } from "./controllers/UsersController";
-
 const routes = Router();
 
 /**
@@ -25,3 +24,5 @@ routes.post("/settings", settingsController.create)
 routes.post("/users", usersController.create)
 routes.post("/messages", messagesConttroler.create)
 routes.get("/messages/:id", messagesConttroler.showByUser)
+
+export { routes };
