@@ -29,6 +29,6 @@ async function basicAuth(req, res, next) {
 }
 
 authorization: {
-  'username': process.env.ALLIANZ_USER,
-    'password': process.env.ALLIANZ_SECRET
+  'username': process.env.,
+    'password': process.env.
 },
