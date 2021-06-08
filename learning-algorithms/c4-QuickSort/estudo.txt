@@ -1,0 +1,3 @@
+https://pt.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm
+
+https://www.youtube.com/watch?v=N2bXEUSAiTI
