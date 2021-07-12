@@ -1,40 +1,69 @@
-const { response } = require("express");
-const express = require("express")
+import express from "express";
 // por que não posso usar import express from "express" ???????
-const { v4: uuidv4 } = require("uuid")
+import { v4 as uuidv4 } from "uuid";
 
 const app = express();
 app.use(express.json());
 
-const customers = []
+const customers = [];
 
-app.post("/account", (req, res) => {
-  // return res.json({ message: "hellow world" })
-  const { cpf, name } = req.body;
+//Middleware
+function verifyIfExistAccountCpf(request, response, next) {
+  const { cpf } = request.headers;
+
+  const customer = customers.find((customer) => customer.cpf === cpf)
+
+  if (!customer) {
+    return response.status(400).json({ error: "Customer not found" });
+  }
+
+  request.customer = customer;
+  return next();
+}
+
+app.post("/account", (request, response) => {
+  // return response.json({ message: "hellow world" })
+  const { cpf, name } = request.body;
 
   const customerAlreadyExists = customers.some(
     (customer) => customer.cpf === cpf
   );
   if (customerAlreadyExists) {
-    return res.status(400).json({ error: " Customer already exists" })
+    return response.status(400).json({ error: " Customer already exists" })
   }
 
-  const id = uuidv4();
+  // const id = uuidv4();
   customers.push({
     cpf,
     name,
-    id,
-    statement: []
+    id: uuidv4(),
+    statement: [],
   })
 
-  return res.status(201).send();
+  return response.status(201).send();
 });
 
-app.get("/statement/:cpf", (req, res) => {
-  const { cpf } = request.params;
-  const customer = customers.find((customer) => customer.cpf === cpf)
-  return res.json(customer.statement);
+app.get("/statement", verifyIfExistAccountCpf, (request, response) => {
+  // const { cpf } = req.params;
+  const { customer } = request;
+  return response.json(customer.statement);
+})
 
+app.post("/deposit", verifyIfExistAccountCpf, (request, response) => {
+  const { description, amount } = request.body;
+  // const body = request.body;
+  const { customer } = request;
+
+  const statementOperation = {
+    description,
+    amount,
+    created_at: new Date(),
+    type: "credit",
+  }
+
+  // console.log(body)
+  customer.statement.push(statementOperation);
+  return response.status(201).send();
 })
 
 app.listen(3333);
