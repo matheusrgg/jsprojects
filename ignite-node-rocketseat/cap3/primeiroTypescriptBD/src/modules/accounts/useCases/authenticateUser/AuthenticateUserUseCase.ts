@@ -1,5 +1,5 @@
 import { compare } from "bcrypt";
-import { sign } from "crypto";
+import { sign } from "jsonwebtoken";
 import { inject, injectable } from "tsyringe";
 
 import { IUsersRepository } from "../../repositories/IUsersRepository";
@@ -27,7 +27,7 @@ interface IResponse {
 @injectable()
 class AuthenticateUserUseCase {
   constructor(
-    @inject("UserRepository")
+    @inject("UsersRepository")
     private usersRepository: IUsersRepository
   ) { }
 
@@ -47,15 +47,20 @@ class AuthenticateUserUseCase {
       throw new Error("Email or password incorrect!");
     }
 
-    const token = sign({}, "cdfeeafdfefswef", {
+    const token = sign({}, "7697bf58e5a63d82d368d72ccd0bef8f", {
       subject: user.id,
       expiresIn: "1d",
     });
 
-    return {
-      user,
+    const tokenReturn: IResponse = {
       token,
+      user: {
+        name: user.name,
+        email: user.email,
+      }
     }
+
+    return tokenReturn;
 
 
   }
