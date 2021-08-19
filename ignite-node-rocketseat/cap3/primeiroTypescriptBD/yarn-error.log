@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn add tsconfig-g-paths -D
+  /usr/bin/node /usr/bin/yarn add @types/uuid
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
@@ -14,17 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/tsconfig-g-paths: Not found
-      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66988:18)
-      at Request.self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140662:22)
-      at Request.emit (events.js:315:20)
-      at Request.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141634:10)
-      at Request.emit (events.js:315:20)
-      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/lib/cli.js:141556:12)
-      at Object.onceWrapper (events.js:421:28)
-      at IncomingMessage.emit (events.js:327:22)
-      at endReadableNT (internal/streams/readable.js:1327:12)
-      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+  Error: ENOENT: no such file or directory, copyfile '/home/matheus/.cache/yarn/v6/npm-@bcoe-v8-coverage-0.2.3-75a2e8b51cb758a7553d6804a5932d7aace75c39-integrity/node_modules/@bcoe/v8-coverage/src/lib/ascii.ts' -> '/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/node_modules/@bcoe/v8-coverage/src/lib/ascii.ts'
 
 npm manifest: 
   {
@@ -44,9 +34,10 @@ npm manifest:
       "uuid": "^8.3.2"
     },
     "scripts": {
-      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-      "typeorm": "ts-node-dev ./node_modules/typeorm/cli",
-      "test": "jest"
+      "dev": "ts-node-dev -r tsconfig-paths/register --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/server.ts",
+      "typeorm": "ts-node-dev -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+      "test": "jest",
+      "seed:admin": "ts-node-dev src/shared/infra/typeorm/seed/admin.ts"
     },
     "devDependencies": {
       "@types/bcrypt": "^5.0.0",
@@ -56,6 +47,7 @@ npm manifest:
       "jest": "^27.0.6",
       "ts-jest": "^27.0.4",
       "ts-node-dev": "^1.1.8",
+      "tsconfig-paths": "^3.10.1",
       "typescript": "^4.3.5"
     }
   }
@@ -2476,7 +2468,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
     integrity sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
   
-  json5@2.x, json5@^2.1.2:
+  json5@2.x, json5@^2.1.2, json5@^2.2.0:
     version "2.2.0"
     resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.0.tgz#2dfefe720c6ba525d9ebd909950f0515316c89a3"
     integrity sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
@@ -2676,7 +2668,7 @@ Lockfile:
     dependencies:
       brace-expansion "^1.1.7"
   
-  minimist@^1.2.5:
+  minimist@^1.2.0, minimist@^1.2.5:
     version "1.2.5"
     resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
     integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
@@ -3586,6 +3578,15 @@ Lockfile:
       make-error "^1.1.1"
       source-map-support "^0.5.17"
       yn "3.1.1"
+  
+  tsconfig-paths@^3.10.1:
+    version "3.10.1"
+    resolved "https://registry.yarnpkg.com/tsconfig-paths/-/tsconfig-paths-3.10.1.tgz#79ae67a68c15289fdf5c51cb74f397522d795ed7"
+    integrity sha512-rETidPDgCpltxF7MjBZlAFPUHv5aHH2MymyPvh+vEyWAED4Eb/WeMbsnD/JDr4OKPOA1TssDHgIcpTN5Kh0p6Q==
+    dependencies:
+      json5 "^2.2.0"
+      minimist "^1.2.0"
+      strip-bom "^3.0.0"
   
   tsconfig@^7.0.0:
     version "7.0.0"
