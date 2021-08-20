@@ -5,6 +5,9 @@ import { ICategoriesRepository } from '@modules/cars/repositories/ICategoriesRep
 
 @injectable()
 class ListCategoriesUseCase {
+  static execute() {
+    throw new Error("Method not implemented.");
+  }
   constructor(
     @inject("CategoriesRepository")
     private categoriesRepository: ICategoriesRepository) { }

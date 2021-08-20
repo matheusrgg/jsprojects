@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629306985307" clover="3.2.0">
-  <project timestamp="1629306985307" name="All files">
-    <metrics statements="487" coveredstatements="473" conditionals="45" coveredconditionals="42" methods="24" coveredmethods="21" elements="556" coveredelements="536" complexity="0" loc="487" ncloc="487" packages="9" files="12" classes="12"/>
+<coverage generated="1629427092006" clover="3.2.0">
+  <project timestamp="1629427092006" name="All files">
+    <metrics statements="497" coveredstatements="483" conditionals="50" coveredconditionals="47" methods="27" coveredmethods="24" elements="574" coveredelements="554" complexity="0" loc="497" ncloc="497" packages="10" files="13" classes="13"/>
     <package name="modules.accounts.infra.typeorm.entities">
       <metrics statements="40" coveredstatements="40" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="User.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/accounts/infra/typeorm/entities/User.ts">
@@ -339,9 +339,9 @@
       </file>
     </package>
     <package name="modules.cars.repositories.in-memory">
-      <metrics statements="86" coveredstatements="82" conditionals="9" coveredconditionals="9" methods="7" coveredmethods="6"/>
+      <metrics statements="83" coveredstatements="79" conditionals="10" coveredconditionals="10" methods="8" coveredmethods="7"/>
       <file name="CarsRepositoryInMemory.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/repositories/in-memory/CarsRepositoryInMemory.ts">
-        <metrics statements="50" coveredstatements="50" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
+        <metrics statements="47" coveredstatements="47" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -382,16 +382,13 @@
         <line num="38" count="2" type="stmt"/>
         <line num="39" count="2" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
-        <line num="41" count="3" type="stmt"/>
-        <line num="42" count="3" type="stmt"/>
-        <line num="43" count="3" type="stmt"/>
+        <line num="41" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
         <line num="44" count="3" type="stmt"/>
         <line num="45" count="3" type="stmt"/>
-        <line num="46" count="3" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="50" count="1" type="stmt"/>
       </file>
       <file name="CategoriesRepositoryInMemory.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/repositories/in-memory/CategoriesRepositoryInMemory.ts">
         <metrics statements="36" coveredstatements="32" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
@@ -533,6 +530,25 @@
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.cars.useCases.listCars">
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <file name="ListAvailableCarsUseCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/useCases/listCars/ListAvailableCarsUseCase.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
       </file>
     </package>
     <package name="shared.errors">
