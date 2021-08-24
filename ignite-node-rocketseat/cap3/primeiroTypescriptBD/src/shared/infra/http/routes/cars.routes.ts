@@ -9,11 +9,12 @@ import { CreateCarController } from "@modules/cars/useCases/createCar/CreateCarC
 
 import { ensureAdmin } from "../middlewares/ensureAdmin";
 import { ensureAuthenticated } from "../middlewares/ensureAuthenticated";
+import { ListAvailableCarsController } from "@modules/cars/useCases/listAvailableCars/ListAvailableCarsController";
 
 const carsRoutes = Router();
 
 const createCarController = new CreateCarController();
-// const listAvailableCarsController = new ListAvailableCarsController();
+const listAvailableCarsController = new ListAvailableCarsController();
 // const createCarSpecificationController = new CreateCarSpecificationController();
 // const uploadCarImagesController = new UploadCarImagesController();
 
@@ -26,7 +27,7 @@ carsRoutes.post(
   createCarController.handle
 );
 
-// carsRoutes.get("/available", listAvailableCarsController.handle);
+carsRoutes.get("/available", listAvailableCarsController.handle);
 
 // carsRoutes.post(
 //   "/specifications/:id",

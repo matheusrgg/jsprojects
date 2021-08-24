@@ -12,6 +12,7 @@ class CarsRepository implements ICarsRepository {
     this.repository = getRepository(Car);
   }
 
+
   async create({
     brand,
     category_id,
