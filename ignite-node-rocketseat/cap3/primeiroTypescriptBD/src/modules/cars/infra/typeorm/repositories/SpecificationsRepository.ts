@@ -4,8 +4,6 @@ import { ICreateSpecificationsDTO, ISpecificationsRepository } from "@modules/ca
 import { Specification } from "../entities/Specification";
 
 
-
-
 class SpecificationsRepository implements ISpecificationsRepository {
 
 
@@ -16,19 +14,25 @@ class SpecificationsRepository implements ISpecificationsRepository {
   }
 
 
-  async create({ description, name }: ICreateSpecificationsDTO): Promise<void> {
+  async create({ description, name }: ICreateSpecificationsDTO): Promise<Specification> {
     const specification = this.respository.create({
       description,
       name
     })
 
     await this.respository.save(specification);
+    return specification
   }
 
   async findByName(name: string): Promise<Specification> {
-    const specification = this.respository.findOne({
+    const specification = await this.respository.findOne({
       name,
     })
+    return specification;
+  }
+
+  async findByIds(ids: string[]): Promise<Specification[]> {
+    const specification = await this.respository.findByIds(ids);
     return specification;
   }
 
