@@ -31,8 +31,7 @@ carsRoutes.get("/available", listAvailableCarsController.handle);
 
 carsRoutes.post(
   "/specifications/:id",
-  ensureAuthenticated,
-  ensureAdmin,
+
   createCarSpecificationController.handle
 );
 
