@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629996453822" clover="3.2.0">
-  <project timestamp="1629996453822" name="All files">
-    <metrics statements="615" coveredstatements="596" conditionals="66" coveredconditionals="61" methods="34" coveredmethods="31" elements="715" coveredelements="688" complexity="0" loc="615" ncloc="615" packages="11" files="15" classes="15"/>
+<coverage generated="1630284838458" clover="3.2.0">
+  <project timestamp="1630284838458" name="All files">
+    <metrics statements="782" coveredstatements="732" conditionals="82" coveredconditionals="74" methods="45" coveredmethods="40" elements="909" coveredelements="846" complexity="0" loc="782" ncloc="782" packages="15" files="19" classes="19"/>
     <package name="modules.accounts.infra.typeorm.entities">
       <metrics statements="40" coveredstatements="40" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="User.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/accounts/infra/typeorm/entities/User.ts">
+      <file name="User.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\accounts\infra\typeorm\entities\User.ts">
         <metrics statements="40" coveredstatements="40" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -50,7 +50,7 @@
     </package>
     <package name="modules.accounts.repositories.in-memory">
       <metrics statements="36" coveredstatements="34" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
-      <file name="UsersRespositoryInMemory.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/accounts/repositories/in-memory/UsersRespositoryInMemory.ts">
+      <file name="UsersRespositoryInMemory.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\accounts\repositories\in-memory\UsersRespositoryInMemory.ts">
         <metrics statements="36" coveredstatements="34" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -92,7 +92,7 @@
     </package>
     <package name="modules.accounts.useCases.authenticateUser">
       <metrics statements="71" coveredstatements="69" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
-      <file name="AuthenticateUserUseCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/accounts/useCases/authenticateUser/AuthenticateUserUseCase.ts">
+      <file name="AuthenticateUserUseCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\accounts\useCases\authenticateUser\AuthenticateUserUseCase.ts">
         <metrics statements="71" coveredstatements="69" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -169,7 +169,7 @@
     </package>
     <package name="modules.accounts.useCases.createUser">
       <metrics statements="35" coveredstatements="33" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
-      <file name="CreateUserCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/accounts/useCases/createUser/CreateUserCase.ts">
+      <file name="CreateUserCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\accounts\useCases\createUser\CreateUserCase.ts">
         <metrics statements="35" coveredstatements="33" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -210,7 +210,7 @@
     </package>
     <package name="modules.cars.infra.typeorm.entities">
       <metrics statements="118" coveredstatements="118" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>
-      <file name="Car.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/infra/typeorm/entities/Car.ts">
+      <file name="Car.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\infra\typeorm\entities\Car.ts">
         <metrics statements="68" coveredstatements="68" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -281,35 +281,35 @@
         <line num="67" count="1" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
       </file>
-      <file name="Category.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/infra/typeorm/entities/Category.ts">
+      <file name="Category.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\infra\typeorm\entities\Category.ts">
         <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="0"/>
         <line num="19" count="2" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
         <line num="21" count="2" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
       </file>
-      <file name="Specification.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/infra/typeorm/entities/Specification.ts">
+      <file name="Specification.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\infra\typeorm\entities\Specification.ts">
         <metrics statements="25" coveredstatements="25" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -340,7 +340,7 @@
     </package>
     <package name="modules.cars.repositories.in-memory">
       <metrics statements="141" coveredstatements="128" conditionals="20" coveredconditionals="18" methods="13" coveredmethods="11"/>
-      <file name="CarsRepositoryInMemory.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/repositories/in-memory/CarsRepositoryInMemory.ts">
+      <file name="CarsRepositoryInMemory.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\repositories\in-memory\CarsRepositoryInMemory.ts">
         <metrics statements="68" coveredstatements="63" conditionals="10" coveredconditionals="8" methods="5" coveredmethods="5"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -411,7 +411,7 @@
         <line num="67" count="1" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
       </file>
-      <file name="CategoriesRepositoryInMemory.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/repositories/in-memory/CategoriesRepositoryInMemory.ts">
+      <file name="CategoriesRepositoryInMemory.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\repositories\in-memory\CategoriesRepositoryInMemory.ts">
         <metrics statements="36" coveredstatements="32" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -450,7 +450,7 @@
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
       </file>
-      <file name="SpecificationsRepositoryInMemory.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/repositories/in-memory/SpecificationsRepositoryInMemory.ts">
+      <file name="SpecificationsRepositoryInMemory.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\repositories\in-memory\SpecificationsRepositoryInMemory.ts">
         <metrics statements="37" coveredstatements="33" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -493,7 +493,7 @@
     </package>
     <package name="modules.cars.useCases.createCar">
       <metrics statements="53" coveredstatements="53" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
-      <file name="CreateCarUseCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/useCases/createCar/CreateCarUseCase.ts">
+      <file name="CreateCarUseCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\useCases\createCar\CreateCarUseCase.ts">
         <metrics statements="53" coveredstatements="53" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -552,7 +552,7 @@
     </package>
     <package name="modules.cars.useCases.createCarSpecification">
       <metrics statements="42" coveredstatements="42" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
-      <file name="CreateCarSpecificationUseCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/useCases/createCarSpecification/CreateCarSpecificationUseCase.ts">
+      <file name="CreateCarSpecificationUseCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\useCases\createCarSpecification\CreateCarSpecificationUseCase.ts">
         <metrics statements="42" coveredstatements="42" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -600,7 +600,7 @@
     </package>
     <package name="modules.cars.useCases.createCategory">
       <metrics statements="37" coveredstatements="37" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
-      <file name="CreateCategoryUseCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/useCases/createCategory/CreateCategoryUseCase.ts">
+      <file name="CreateCategoryUseCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\useCases\createCategory\CreateCategoryUseCase.ts">
         <metrics statements="37" coveredstatements="37" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -643,7 +643,7 @@
     </package>
     <package name="modules.cars.useCases.listAvailableCars">
       <metrics statements="31" coveredstatements="31" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-      <file name="ListAvailableCarsUseCase.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/modules/cars/useCases/listAvailableCars/ListAvailableCarsUseCase.ts">
+      <file name="ListAvailableCarsUseCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\cars\useCases\listAvailableCars\ListAvailableCarsUseCase.ts">
         <metrics statements="31" coveredstatements="31" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -678,9 +678,200 @@
         <line num="31" count="1" type="stmt"/>
       </file>
     </package>
+    <package name="modules.rentals.infra.typeorm.entities">
+      <metrics statements="22" coveredstatements="18" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="0"/>
+      <file name="Rental.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\rentals\infra\typeorm\entities\Rental.ts">
+        <metrics statements="22" coveredstatements="18" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.rentals.infra.typeorm.repositories.in-memory">
+      <metrics statements="47" coveredstatements="29" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="3"/>
+      <file name="RentalsRepositoryInMemory.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\rentals\infra\typeorm\repositories\in-memory\RentalsRepositoryInMemory.ts">
+        <metrics statements="47" coveredstatements="29" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="modules.rentals.useCases">
+      <metrics statements="70" coveredstatements="61" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2"/>
+      <file name="CreateRentallUseCase.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\modules\rentals\useCases\CreateRentallUseCase.ts">
+        <metrics statements="70" coveredstatements="61" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="31" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="35" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="37" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="39" count="4" type="stmt"/>
+        <line num="40" count="4" type="stmt"/>
+        <line num="41" count="4" type="stmt"/>
+        <line num="42" count="4" type="cond" truecount="0" falsecount="1"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="4" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="4" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="53" count="4" type="stmt"/>
+        <line num="54" count="4" type="stmt"/>
+        <line num="55" count="4" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="57" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="59" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
+        <line num="65" count="4" type="stmt"/>
+        <line num="66" count="4" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="70" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="shared.container.providers.DateProvider.implementations">
+      <metrics statements="28" coveredstatements="28" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="DayjsDateProvider.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\shared\container\providers\DateProvider\implementations\DayjsDateProvider.ts">
+        <metrics statements="28" coveredstatements="28" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="shared.errors">
       <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-      <file name="AppError.ts" path="/home/matheus/Documentos/Programacao/jsprojects/ignite-node-rocketseat/cap3/primeiroTypescriptBD/src/shared/errors/AppError.ts">
+      <file name="AppError.ts" path="C:\Users\Matheus\Documents\Code\doismilevinteum\jsprojects\ignite-node-rocketseat\cap3\primeiroTypescriptBD\src\shared\errors\AppError.ts">
         <metrics statements="11" coveredstatements="11" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -689,9 +880,9 @@
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
         <line num="7" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
       </file>
     </package>
