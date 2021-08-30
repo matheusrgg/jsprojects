@@ -1,8 +1,7 @@
-
 import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/CarsRepositoryInMemory";
 import { SpecificationsRepositoryInMemory } from "@modules/cars/repositories/in-memory/SpecificationsRepositoryInMemory";
-
 import { AppError } from "@shared/errors/AppError";
+
 import { CreateCarSpecificationUseCase } from "./CreateCarSpecificationUseCase";
 
 let createCarSpecificationUseCase: CreateCarSpecificationUseCase;
@@ -19,7 +18,7 @@ describe("Create Car Specification", () => {
     );
   });
 
-  it("should not be able to add a new specification to a now-existent car", async () => {
+  it("Should not be able to add a new specification to a non-existent car", async () => {
     const car_id = "1234";
     const specifications_id = ["54321"];
 
@@ -31,7 +30,7 @@ describe("Create Car Specification", () => {
     ).rejects.toEqual(new AppError("Car does not exists!"));
   });
 
-  it("should be able to add a new specification to the car", async () => {
+  it("Should be able to add a new specification to the car", async () => {
     const car = await carsRepositoryInMemory.create({
       name: "Name Car",
       description: "Description Car",
