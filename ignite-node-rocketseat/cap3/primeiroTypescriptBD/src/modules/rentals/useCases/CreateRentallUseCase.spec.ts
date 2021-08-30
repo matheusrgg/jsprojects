@@ -46,7 +46,7 @@ describe("Create Rental", () => {
      })
  
  
-     console.log(rental);
+    //  console.log(rental);
  
      expect(rental).toHaveProperty("id");
      expect(rental).toHaveProperty("start_date")

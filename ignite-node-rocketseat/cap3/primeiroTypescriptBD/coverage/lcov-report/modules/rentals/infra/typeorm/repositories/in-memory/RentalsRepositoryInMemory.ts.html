@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.7% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>29/47</span>
+                <span class='fraction'>47/47</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">77.78% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>7/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
-                <span class="quiet">Branches</span>
+                <span class="quiet">Functions</span>
                 <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">75% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>3/4</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">61.7% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>29/47</span>
+                <span class='fraction'>47/47</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -114,36 +114,36 @@
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-yes">4x</span>
@@ -161,35 +161,35 @@ class RentalsRepositoryInMemory implements IRentalsRepository {
 &nbsp;
   async findOpenRentalByCar(car_id: string): Promise&lt;Rental&gt; {
     return this.rentals.find(
-      (rental) =&gt; rental.car_id === car_id &amp;&amp; !rental.end_date 
+      (rental) =&gt; rental.car_id === car_id<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; !rental.end_date </span>
     )
   }
 &nbsp;
   async findOpenRentalByUser(user_id: string): Promise&lt;Rental&gt; {
     return this.rentals.find(
-      (rental) =&gt; rental.user_id === user_id &amp;&amp; !rental.end_date
+      (rental) =&gt; rental.user_id === user_id<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; !rental.end_date</span>
     );
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  async create({</span>
-<span class="cstat-no" title="statement not covered" >    car_id,</span>
-<span class="cstat-no" title="statement not covered" >    expected_return_date,</span>
-<span class="cstat-no" title="statement not covered" >    user_id</span>
-<span class="cstat-no" title="statement not covered" >  }: ICreateRentalDTO ): Promise&lt;Rental&gt; {</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    const rental = new Rental();</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    Object.assign(rental, {</span>
-<span class="cstat-no" title="statement not covered" >      car_id,</span>
-<span class="cstat-no" title="statement not covered" >      expected_return_date,</span>
-<span class="cstat-no" title="statement not covered" >      user_id,</span>
-<span class="cstat-no" title="statement not covered" >      start_date: new Date(),</span>
-<span class="cstat-no" title="statement not covered" >    })</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >    this.rentals.push(rental);</span>
-<span class="cstat-no" title="statement not covered" >    return rental;  </span>
-<span class="cstat-no" title="statement not covered" >  </span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+  async create({
+    car_id,
+    expected_return_date,
+    user_id
+  }: ICreateRentalDTO ): Promise&lt;Rental&gt; {
+&nbsp;
+    const rental = new Rental();
+&nbsp;
+    Object.assign(rental, {
+      car_id,
+      expected_return_date,
+      user_id,
+      start_date: new Date(),
+    })
+&nbsp;
+    this.rentals.push(rental);
+    return rental;  
+  
+  }
 &nbsp;
 &nbsp;
 &nbsp;
@@ -202,7 +202,7 @@ export { RentalsRepositoryInMemory }</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Aug 29 2021 21:53:58 GMT-0300 (Horário Padrão de Brasília)
+                at Sun Aug 29 2021 23:06:34 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="../../../../../../prettify.js"></script>
