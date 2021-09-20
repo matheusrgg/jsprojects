@@ -4,7 +4,7 @@ import { v4 as uuid} from "uuid"
 import { app } from "@shared/infra/http/app";
 import createConnectionon from "@shared/infra/typeorm";
 import { Connection } from "typeorm";
-import { response } from "express";
+
 
 describe("Create Category Controller ",  () =>{
 
@@ -43,7 +43,7 @@ describe("Create Category Controller ",  () =>{
       // console.log(responseToken.body.token);
       const { refresh_token } = responseToken.body;
 
-        await request(app)
+       const response =  await request(app)
         .post("/categories")
         .send({
           name: "Category Supertest",
@@ -54,5 +54,31 @@ describe("Create Category Controller ",  () =>{
         });
 
         expect(response.status).toBe(201);
+    });
+
+
+    it("should not be able to create a new category with name exists ", async () =>{
+
+      const responseToken = await request(app)
+      .post("/sessions")
+      .send({
+        email: "admin@rentx.com.br",
+        password: "admin",
+      });
+
+      // console.log(responseToken.body.token);
+      const { refresh_token } = responseToken.body;
+
+       const response =  await request(app)
+        .post("/categories")
+        .send({
+          name: "Category Supertest",
+          description: "Category Supertest",
+        })
+        .set({
+          Authorization: `Bearer ${refresh_token}`,
+        });
+
+        expect(response.status).toBe(400);
     });
 });
